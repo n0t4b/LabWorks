@@ -120,7 +120,7 @@ public class CalculatorTest extends ApplicationTest {
         clickOn("#button2");
         clickOn("#buttonEquals");
 
-        verifyThat("#resultField", hasText("3")); // Ожидаем "3"
+        verifyThat("#resultField", hasText("3"));
     }
 
     @Test
@@ -134,7 +134,7 @@ public class CalculatorTest extends ApplicationTest {
         clickOn("#button4");
         clickOn("#buttonEquals");
 
-        verifyThat("#resultField", hasText("12")); // Ожидаем "12"
+        verifyThat("#resultField", hasText("12"));
     }
 }
 
