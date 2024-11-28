@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.CalculatorTest" time="6.644" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\nikit\Desktop\lab10\target\test-classes;C:\Users\nikit\Desktop\lab10\target\classes;C:\Users\nikit\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\nikit\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-junit4\2.13.9\allure-junit4-2.13.9.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\nikit\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.2\jackson-databind-2.12.2.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.2\jackson-annotations-2.12.2.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.2\jackson-core-2.12.2.jar;C:\Users\nikit\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\nikit\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\nikit\.m2\repository\org\testfx\testfx-core\4.0.18\testfx-core-4.0.18.jar;C:\Users\nikit\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\nikit\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\nikit\.m2\repository\org\osgi\org.osgi.core\6.0.0\org.osgi.core-6.0.0.jar;C:\Users\nikit\.m2\repository\org\testfx\testfx-junit\4.0.18\testfx-junit-4.0.18.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2-win.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Users\nikit\.jdks\openjdk-23.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\nikit\AppData\Local\Temp\surefire17642313953405401079\surefirebooter-20241128225649035_3.jar C:\Users\nikit\AppData\Local\Temp\surefire17642313953405401079 2024-11-28T22-56-48_972-jvmRun1 surefire-20241128225649035_1tmp surefire_0-20241128225649035_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\nikit\Desktop\lab10\target\test-classes;C:\Users\nikit\Desktop\lab10\target\classes;C:\Users\nikit\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\nikit\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-junit4\2.13.9\allure-junit4-2.13.9.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\nikit\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\nikit\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.2\jackson-databind-2.12.2.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.2\jackson-annotations-2.12.2.jar;C:\Users\nikit\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.2\jackson-core-2.12.2.jar;C:\Users\nikit\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\nikit\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\nikit\.m2\repository\org\testfx\testfx-core\4.0.18\testfx-core-4.0.18.jar;C:\Users\nikit\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\nikit\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\nikit\.m2\repository\org\osgi\org.osgi.core\6.0.0\org.osgi.core-6.0.0.jar;C:\Users\nikit\.m2\repository\org\testfx\testfx-junit\4.0.18\testfx-junit-4.0.18.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2-win.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2.jar;C:\Users\nikit\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2-win.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nikit"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Users\nikit\.jdks\openjdk-23.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\nikit\Desktop\lab10"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\nikit\AppData\Local\Temp\surefire17642313953405401079\surefirebooter-20241128225649035_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="nikit"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\nikit\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\nikit\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.4"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\nikit\Desktop\lab10"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\nikit\.jdks\openjdk-23.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Users\nikit\Desktop\javafx-sdk-23.0.1\bin;C:\Users\nikit\Desktop\jdk-23.0.1\bin;C:\Users\nikit\Desktop\apache-maven-3.9.9\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\nikit\AppData\Local\Microsoft\WindowsApps;C:\Users\nikit\.dotnet\tools;C:\Users\nikit\AppData\Local\GitHubDesktop\bin;C:\Users\nikit\Desktop\apache-maven-3.9.9\bin;C:\Users\nikit\Desktop\javafx-sdk-23.0.1\bin;C:\Users\nikit\Desktop\jdk-23.0.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testDivideByZero" classname="org.example.CalculatorTest" time="0.815">
+    <system-err><![CDATA[нояб. 28, 2024 10:56:49 PM com.sun.javafx.application.PlatformImpl startup
+WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @4501b7af'
+]]></system-err>
+  </testcase>
+  <testcase name="testAdd" classname="org.example.CalculatorTest" time="0.247"/>
+  <testcase name="testSubtract" classname="org.example.CalculatorTest" time="0.244"/>
+  <testcase name="testPower" classname="org.example.CalculatorTest" time="0.242"/>
+  <testcase name="testSqrt" classname="org.example.CalculatorTest" time="0.241"/>
+  <testcase name="testGUIAddition" classname="org.example.CalculatorTest" time="2.278"/>
+  <testcase name="testSqrtOfNegative" classname="org.example.CalculatorTest" time="0.236"/>
+  <testcase name="testDivide" classname="org.example.CalculatorTest" time="0.238"/>
+  <testcase name="testMultiply" classname="org.example.CalculatorTest" time="0.235"/>
+  <testcase name="testGUIMultiplication" classname="org.example.CalculatorTest" time="1.822"/>
+</testsuite>
