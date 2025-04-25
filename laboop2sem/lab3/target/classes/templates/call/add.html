@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Добавить звонок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Добавить звонок</h1>
+<form action="#" th:action="@{/calls/add}" th:object="${call}" method="post">
+    <p>Абонент: <input type="text" th:field="*{subscriberNumber}" /></p>
+    <p>Вызываемый номер: <input type="text" th:field="*{calledNumber}" /></p>
+    <p>Время звонка: <input type="datetime-local" th:field="*{callDateTime}" /></p>
+    <p>Длительность (сек): <input type="number" th:field="*{durationSeconds}" /></p>
+    <p>Тариф: <input type="number" step="0.01" th:field="*{tariffRate}" /></p>
+    <p><input type="submit" value="Добавить" /></p>
+</form>
+<a th:href="@{/calls}">Назад к списку</a>
+</body>
+</html>

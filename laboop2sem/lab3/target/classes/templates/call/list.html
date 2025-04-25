@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Список звонков</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Список звонков</h1>
+<a th:href="@{/calls/add}">Добавить звонок</a> |
+<a th:href="@{/calls/export}">Экспортировать в файл</a> |
+<a th:href="@{/calls/search}">Поиск звонков</a>
+<br/><br/>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Абонент</th>
+        <th>Вызываемый номер</th>
+        <th>Время звонка</th>
+        <th>Длительность (сек)</th>
+        <th>Тариф</th>
+        <th>Действия</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="call : ${calls}">
+        <td th:text="${call.callID}"></td>
+        <td th:text="${call.subscriberNumber}"></td>
+        <td th:text="${call.calledNumber}"></td>
+        <td th:text="${#temporals.format(call.callDateTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+        <td th:text="${call.durationSeconds}"></td>
+        <td th:text="${call.tariffRate}"></td>
+        <td>
+            <a th:href="@{/calls/edit/{id}(id=${call.callID})}">Редактировать</a> |
+            <a th:href="@{/calls/delete/{id}(id=${call.callID})}">Удалить</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

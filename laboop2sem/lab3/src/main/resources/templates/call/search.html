@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Поиск звонков</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Поиск звонков</h1>
+<form action="#" th:action="@{/calls/search}" method="post">
+    <p>Поиск по абоненту: <input type="text" name="subscriberNumber" /></p>
+    <p><input type="submit" value="Поиск" /></p>
+</form>
+<br/>
+<a th:href="@{/calls}">Назад к списку</a>
+</body>
+</html>
