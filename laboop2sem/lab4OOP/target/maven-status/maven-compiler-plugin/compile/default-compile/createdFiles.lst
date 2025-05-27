@@ -1,0 +1,10 @@
+Main.class
+models\Auto.class
+services\AutoService.class
+models\Product.class
+services\UserService.class
+models\User.class
+dao\UserDao.class
+dao\AutoDao.class
+utils\HibernateSessionFactoryUtil.class
+models\Order.class

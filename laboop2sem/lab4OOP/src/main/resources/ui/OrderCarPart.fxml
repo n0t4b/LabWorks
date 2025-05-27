@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.OrderCarPartController">
+    <children>
+        <Label text="Order and Car Part Management" />
+        <HBox alignment="CENTER" spacing="20">
+            <Button onAction="#showOrderWindow" text="Manage Orders" />
+            <Button onAction="#showCarPartWindow" text="Manage Car Parts" />
+        </HBox>
+    </children>
+</VBox>
+
