@@ -1,0 +1,46 @@
+@startuml
+skinparam handwritten true
+skinparam shadowing true
+
+interface ElectronicCard {
+    + displayInfo()
+}
+
+class BasicCard {
+    + displayInfo()
+}
+
+abstract class CardDecorator {
+    # card: ElectronicCard
+    + CardDecorator(card: ElectronicCard)
+    + displayInfo()
+}
+
+class PassportDecorator {
+    + PassportDecorator(card: ElectronicCard)
+    + displayInfo()
+    + getPassportData(): String
+}
+
+class InsurancePolicyDecorator {
+    + InsurancePolicyDecorator(card: ElectronicCard)
+    + displayInfo()
+    + getPolicyNumber(): String
+}
+
+class BankAccountDecorator {
+    + BankAccountDecorator(card: ElectronicCard)
+    + displayInfo()
+    + getAccountNumber(): String
+    + getBalance(): double
+}
+
+ElectronicCard <|-- BasicCard
+ElectronicCard <|-- CardDecorator
+CardDecorator <|-- PassportDecorator
+CardDecorator <|-- InsurancePolicyDecorator
+CardDecorator <|-- BankAccountDecorator
+
+CardDecorator o-- ElectronicCard : "decorates"
+
+@enduml
